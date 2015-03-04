@@ -252,7 +252,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := Resurrection_Remix_LP_v5.3.7
+    CM_BUILDTYPE := HCTRom_LOLLIPOP_RR_v5.3.7
     CM_EXTRAVERSION :=
 endif
 
@@ -275,7 +275,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_BUILD) \
   ro.rr_modversion=$(CM_BUILDTYPE) \
-  ro.resurrection.version=Resurrection_Remix_LP_5.0-$(shell date -u +%Y%m%d) \
+  ro.resurrection.version=HCTRom_RR_5.0-$(shell date -u +%Y%m%d) \
   ro.cmlegal.url=http://www.cyanogenmod.org/docs/privacy
 
 -include vendor/cm-priv/keys/keys.mk
